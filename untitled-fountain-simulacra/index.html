@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../pages_style.css">
+<link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <!--nav-->
+<div class="navigation">
+  <div class="navigation-left">
+    <a href="#" onclick="openNav()">projects</a>
+      <a href="#" id="myBtnAbout">about</a>
+      <a href="#" id="myBtnContact">contact</a>
+    
+  </div>
+</div>
+    
+    <!--logo-->
+<div class="logo" id="main">
+    <a href="../index.html"><img src="../logo-black.png" style="width:100%"></a>
+</div>
+    
+
+    <!--pictures-->
+<div id="img_scroll">
+    <!--<div class="proj_pic" id="pic1"><iframe src="img/2.jpg" height="200" width="200"></iframe></div>
+    <div class="proj_pic" id="pic2"><iframe src="img/3.jpg" height="300" width="300"></iframe></div>
+    <div class="proj_pic" id="pic3"><iframe src="img/4.jpg" height="250" width="200"></iframe></div>
+    <div class="proj_pic" id="pic4"><iframe src="img/5.jpg" height="200" width="300"></iframe></div>
+    <div id="bgpic"><image src="img/1.jpg" width="500"></image></div>-->
+    <div class="proj_pic"><image src="img/1.jpg" height="300px"></image></div>
+    <div class="proj_pic"><image src="img/2.jpg" height="300px"></image></div>
+</div>
+    
+    <!--discription-->
+<!--<div id="txt"><p>In collaboration with Clara Kim and Mauri Trimmer.</p></div>-->
+    
+<!--project list sidenav-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../pit-o-plastic-inc/">PIT O'PLASTIC INC.</a>
+  <a href="../god-bless-the-surveillance-state/">God Bless the Surveillance State</a>
+  <a href="../counting-potential-presidents-lies/">Counting Potential Presidents' Lies</a>
+    <a href="../untitled-mommas-momma/">Untitled (Momma's Momma)</a>
+    <a href="../untitled-fountain-simulacra/">Untitled (Fountain Simulacra)</a>
+    <a href="../light-body/">Light Body</a>
+    <a href="../public-interventions/">Public Interventions</a>
+    <a href="../theoretically-burning-myself-alive/">Theoretically Burning Myself Alive</a>
+    <a href="../lasercut-multiples/">Multiples</a>
+    <a href="../graphic-design-art/">Graphic Design & Art</a>
+</div>
+
+<!--pop up for about-->
+
+<!-- The Modal -->
+<div id="myModalAbout" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>ABOUT</h3>
+    
+    <p>Salvadora McCaffrey is a transdisciplinary artist and designer native to Boston. Through the mergence of various mediums, she creates spaces and objects for experiences. Public(s), and their engagement, are tapped into to both communicate and socially experiment. Spatial theories, biographical histories, and sociopolitical excavations run amok in her work. McCaffrey is an alumna of Boston Arts Academy and is currently pursuing her BFA at the School of The Museum of Fine Arts at Tufts University.</p>
+
+  </div>
+
+</div>
+
+
+<!--popup for contact-->
+<div id="myModalContact" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>CONTACT</h3>
+    <p>
+Please direct all inquiries via email at <a href="mailto:salvadora@salvadora.studio">mailto:salvadora@salvadora.studio</a> <br>
+
+Follow me on <a href="https://www.instagram.com/seanpaul.sartre/">Instagram</a> to watch my livestreams and see the debauchery in my studio/lab.</p>
+
+  </div>
+
+</div>
+    
+<!--content-->
+<div>
+
+</div>
+    
+    
+<!--script for pop-up about-->
+
+<script>
+// Get the modal
+var modal1 = document.getElementById('myModalAbout');
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtnAbout");
+    
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+</script>
+    
+<!--script for pop-up contact-->
+
+<script>
+// Get the modal
+var modal2 = document.getElementById('myModalContact');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtnContact");
+    
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+    
+    
+<!--script for sidenav-->    
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginRight = "300px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+}
+</script>
+
+    
+    
+</body>
